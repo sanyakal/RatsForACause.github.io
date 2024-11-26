@@ -14,7 +14,7 @@ body {
 
 /* Thumbnail Image */
 .thumbnail {
-    border-radius: 50%;
+    border-radius: 10;
     display: block;
     margin-left: auto;
     margin-right: auto;

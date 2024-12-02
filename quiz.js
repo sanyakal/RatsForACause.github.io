@@ -238,11 +238,11 @@ function showFinalResult() {
     // Set different images based on the category
     const categoryImages = {
         fashion: "images/fashionRatResult.png",
-        tech: "path_to_tech_image.jpg",
-        transport: "path_to_transport_image.jpg",
-        food: "path_to_food_image.jpg",
-        commorg: "path_to_commorg_image.jpg",
-        scientist: "path_to_scientist_image.jpg"
+        tech: "images/techRatResult.png",
+        transport: "images/transportRatResult.png",
+        food: "images/foodRatResult.png",
+        commorg: "images/commorgRatResult.png",
+        scientist: "images/scientistRatResult.png"
     };
     finalImage.src = categoryImages[randomCategory] || "default_image.jpg";  // Use a default if no match found
 

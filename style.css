@@ -1,7 +1,8 @@
-/* Global Body Styles */
 body {
     font-family: Poppins, Arial, sans-serif;
     background-color: rgb(229, 228, 226);
+    margin: 0;
+    padding: 0;
 }
 
 /* Quiz Title */
@@ -14,7 +15,7 @@ body {
 
 /* Thumbnail Image */
 .thumbnail {
-    border-radius: 10%;
+    border-radius: 50px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -31,6 +32,7 @@ body {
     padding: 8px;
     display: block;
     margin: auto;
+    cursor: pointer;
 }
 
 .begin-quiz:hover {
@@ -39,9 +41,213 @@ body {
     padding: 10px;
 }
 
+/* Quiz Container */
+.quiz-container {
+    display: none;
+    width: 80%; /* Make the quiz container smaller */
+    max-width: 600px; /* Limit maximum width to 600px */
+    margin: 40px auto; /* Center the container horizontally and add top margin */
+    padding: 20px;
+}
+
+/* Question Image */
+.question-image {
+    max-width: 100%;
+    max-height: 300px;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: contain;
+}
+
+
+/* Question and Answer styles */
+.quiz-container {
+    width: 90%; /* Make the container take up most of the screen width */
+    max-width: 800px; /* Set an upper limit on the width */
+    min-width: 320px; /* Ensure it doesn’t become too small on mobile */
+    height: auto;  /* Allow height to adjust naturally based on content */
+    padding: 20px;
+    margin: 0 auto;  /* Center the container horizontally */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;  /* Align items at the top */
+    align-items: center;  /* Center elements horizontally */
+}
+
+/* Title and Header */
+.quiz-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.quiz-header h2 {
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+/* Answers List */
+#answer-list {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;  /* Ensure answers fill the container width */
+}
+
+#answer-list li {
+    margin: 10px 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;  /* Regular weight for answers */
+    font-size: 10px;  /* Larger text for readability */
+}
+
+/* Answer inputs */
+#answer-list input {
+    margin-right: 10px;
+}
+
+/* Button Styles */
+.next-button {
+    padding: 12px 25px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;  /* Space from answers */
+}
+
+.next-button:hover {
+    background-color: #45a049;
+}
+
+/* Progress Bar Styles */
+.progress-container {
+    width: 100%;
+    margin: 20px 0;
+}
+
+progress {
+    width: 100%;
+    height: 20px;
+}
+
+/* Optional: Make quiz responsive for smaller screens */
+@media (max-width: 600px) {
+    .quiz-container {
+        width: 100%;  /* Take full screen width on smaller devices */
+        padding: 15px;
+    }
+
+    .quiz-header h2 {
+        font-size: 24px;  /* Smaller text on mobile */
+    }
+
+    #answer-list li {
+        font-size: 16px;  /* Slightly smaller text for answers on mobile */
+    }
+
+    .next-button {
+        width: 100%;  /* Make the next button full width */
+    }
+}
+
+
+/* Progress Bar */
+.progress-container {
+    margin: 20px 0;
+    text-align: center;
+}
+
+progress {
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    background-color: rgb(192, 192, 192);
+}
+
+progress::-webkit-progress-value {
+    background-color: rgb(192, 192, 192);
+}
+
+/* Next Button (Arrow) */
+.next-button {
+    background-color: rgb(192, 192, 192);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    align-items:center;
+    justify-content:center;
+    margin: 20px auto;
+}
+
+.next-button:hover {
+    background-color: rgb(128, 128, 128);
+    opacity: 0.8;
+    padding: 12px 22px;
+}
+
+.next-button:disabled {
+    opacity: 0.5; /* Make the button look disabled */
+    cursor: not-allowed; /* Change the cursor to indicate it's disabled */
+}
+
+
 /* Accreditation Text */
 .accredition {
     text-align: center;
     font-size: 10px;
     margin-top: 100px;
+}
+
+/* Optional: Make quiz responsive for smaller screens */
+@media (max-width: 600px) {
+    .quiz-container {
+        width: 100%;  /* Take full screen width on smaller devices */
+        padding: 15px;
+    }
+
+    .quiz-header h2 {
+        font-size: 16px;  /* Smaller text on mobile */
+    }
+
+    #answer-list li {
+        font-size: 10px;  /* Slightly smaller text for answers on mobile */
+    }
+
+    .next-button {
+        width: 100%;  /* Make the next button full width */
+    }
+}
+
+/* Hide the final result container initially */
+.final-result {
+    display: none; /* Hide it until the quiz is finished */
+    text-align: center; /* Center the text inside */
+}
+
+/* Style for the final image */
+.final-image {
+    max-width: 100%; /* Make sure the image fits within the container */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Add some space below the image */
+}
+
+/* Final result text styling */
+#final-text {
+    font-size: 24px; /* Set the text size */
+    font-family: 'Poppins', sans-serif; /* Use the Poppins font family */
+    font-weight: 500; /* Adjust font weight */
+    color: #333; /* Set the text color */
+    margin-top: 10px; /* Add some space above the text */
 }

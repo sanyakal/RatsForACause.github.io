@@ -239,7 +239,7 @@ function showFinalResult() {
 
     // Set different images based on the category
     const categoryImages = {
-        fashion: "fashionRatResult.png",
+        fashion: "images/fashionRatResult.png",
         tech: "path_to_tech_image.jpg",
         transport: "path_to_transport_image.jpg",
         food: "path_to_food_image.jpg",

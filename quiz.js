@@ -8,7 +8,7 @@ const questions = [
             { "text": "Waiting for the next bus isn't so bad... let's eat while we wait.", "category": "transport", "points": 0.66},
             { "text": "Good thing there's an E-scooter station near me, this is way better.", "category": "transport", "points": 0.66},
         ],
-        "image": "q1_image.jpg"
+        "image": "images/q1.gif"
     },
     {
         "question": "You’ve just arrived home, hungry after a busy day of classes, and you’re scrambling to get dinner ready. You don’t feel like making something elaborate, so you’re weighing your options. What are you considering?",
@@ -18,7 +18,7 @@ const questions = [
             { "text": "See what’s available at your local food co-op!", "category": "commorg", "points": 1},
             { "text": "Cooking a quick, plant-based meal with fresh ingredients while listening to a climate change docuseries. You’re a David Attenborough stan!", "category": "scientist", "points": 1}
         ],
-        "image": "q2_image.jpg"
+        "image": "images/q2.gif"
     },
     {
         "question": "As you’re eating your dinner, your roommate joins you, and the two of you start discussing your plans for the 3-day weekend coming up. You’re thinking of a trip together to recharge. Which of the following will you do?",
@@ -27,7 +27,7 @@ const questions = [
             { "text": "Take an airplane and visit another state. You’ve been wanting to hike in Sedona!", "category": "transport", "points": 0.66},
             { "text": "Stay local and visit a part of your town you have never been to. There’s a cute farmer’s market you’ve been wanting to check out!", "category": "transport", "points": 1}
         ],
-        "image": "q3_image.jpg"
+        "image": "images/q3.gif"
     },
     {
         "question": "After finishing dinner, you’re ready to unwind for the night and do your skincare routine. You’ve been taking better care of your skin lately and you’ve been using a basic routine: a good but boring cleanser and sunscreen. You’re scrolling through your TikTok feed and see that there’s a new cleanser that people are saying has the best skincare benefits ever! What do you do?",
@@ -37,7 +37,7 @@ const questions = [
             { "text": "Finish your cleanser, then go buy the new cleanser. You don’t want to waste your cleanser, but you do want to see what the hype is.", "category": "fashion", "points": 0.33},
             { "text": "Throw out your old cleanser and get the new one. It’s kind of a boring product, and you don’t have enough counter space for both.", "category": "fashion", "points": 1}
         ],
-        "image": "q4_image.jpg"
+        "image": "images/q4.gif"
     },
     {
         "question": "You’ve finished your skincare routine. This all-nighter is becoming unavoidable, what’s your study spot?",
@@ -48,7 +48,7 @@ const questions = [
             { "text": "You mean my first one of the night? Nothing’s more effective for me than hoping in my car to drive a short distance to the cafe next to my home", "category": "transport", "points": 1},
             { "text": "Anywhere will do - I’ll just get myself an extra great treat tomorrow", "category": "fashion", "points": 1}
         ],
-        "image": "q5_image.jpg"
+        "image": "images/q5.gif"
     },
     {
         "question": "Now it’s time to lock in! You’re doing some last minute cramming for your midterm tomorrow and you’re deciding which resources your professor recommended. Which one are you going to try first?",

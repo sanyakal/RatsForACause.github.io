@@ -10,16 +10,46 @@
     <title>Rats for a Cause</title>
 </head>
 <body>
+    <p class="quiz-title">
+        What's your NYC Rat Alter Ego?
+    </p>
 
-    <p class="quiz-title">What's your NYC Rat Alter Ego?</p>
-
-    <img class="thumbnail" src="RatSubwayGIF.gif" alt="Rat Subway GIF">
+    <img class="thumbnail" src="rat subway gif/RatSubwayGIF.gif" alt="Rat Subway GIF">
 
     <button class="begin-quiz">Begin Quiz</button>
 
     <p class="accredition">
-        Created for SYN 100 Final Project by Sanya Kaluarachchi, Allison Gau, Serena Chu, Camilla Nikuzwe, and Cyrus Panaguiton. Find more details about the project <a href="https://your-link-here.com">here</a>.
+        Created for SYN 100 Final Project by Sanya Kaluarachchi, Allison Gau, Serena Chu, Camilla Nikuzwe, and Cyrus Panaguiton. Find more details about the project <a href="https://sites.google.com/d/1eL6Z2HsJvwyF7FFgenmG_4JNDUG1dSd6/p/1lcZ8m71l4krRvpMrg9iOENBs8FQgeRDK/edit?pli=1">here</a>
     </p>
 
+    <!-- Quiz Container (Initially hidden) -->
+    <div class="quiz-container" id="quiz" style="display: none;">
+        <div class="quiz-header">
+            <h2 id="question">Question Text</h2>
+            <!-- Image for each question -->
+            <img id="question-image" src="" alt="Question Image" class="question-image">
+            <ul id="answer-list">
+                <!-- Radio buttons will be dynamically inserted here -->
+            </ul>
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="progress-container">
+            <progress id="progress-bar" value="0" max="100"></progress>
+        </div>
+
+        <!-- Arrow Button for Next Question -->
+        <button class="next-button" onclick="loadNextQuestion()">→</button>
+    </div>
+
+    <!-- Final Result Section (Initially hidden) -->
+    <div class="final-result" id="final-result" style="display: none;">
+        <img id="final-image" src="" alt="Final Image" class="final-image">
+        <p id="final-text">You have completed the quiz! Here are your results:</p>
+    </div>
+
+
+    <!-- Link to external JavaScript file -->
+    <script src="quiz.js"></script>
 </body>
 </html>

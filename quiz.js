@@ -38,8 +38,7 @@ const questions = [
             { "text": "Throw out your old cleanser and get the new one. It’s kind of a boring product, and you don’t have enough counter space for both.", "category": "fashion", "points": 1}
         ],
         "image": "q4_image.jpg"
-    }
-    /*,
+    },
     {
         "question": "You’ve finished your skincare routine. This all-nighter is becoming unavoidable, what’s your study spot?",
         "answers": [
@@ -120,7 +119,6 @@ const questions = [
         ],
         "image": "q12_image.jpg"
     }
-     */
 ];
 
 let selectedAnswerPoints = null;

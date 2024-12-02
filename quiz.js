@@ -37,7 +37,7 @@ const questions = [
             { "text": "Finish your cleanser, then go buy the new cleanser. You don’t want to waste your cleanser, but you do want to see what the hype is.", "category": "fashion", "points": 0.33},
             { "text": "Throw out your old cleanser and get the new one. It’s kind of a boring product, and you don’t have enough counter space for both.", "category": "fashion", "points": 1}
         ],
-        "image": "images/q4.gif"
+        "image":"images/q4.gif"
     },
     {
         "question": "You’ve finished your skincare routine. This all-nighter is becoming unavoidable, what’s your study spot?",
@@ -273,5 +273,3 @@ function calculateCharacterMatch() {
     // Return both the max percentage and the list of categories with that max
     return { maxPercentage, categoriesWithMaxPercentage };
 }
-
-

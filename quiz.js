@@ -45,7 +45,7 @@ const questions = [
             { "text": "Denny’s - a constant supply of coffee and food", "category": "food", "points": 1},
             { "text": "Library - the sense of communal struggle will hold you accountable", "category": "commorg", "points": 1},
             { "text": "My room - the solitude will be great", "category": "scientist", "points": 1},
-            { "text": "You mean my first one of the night? Nothing’s more effective for me than hoping in my car to drive a short distance to the cafe next to my home", "category": "transport", "points": 1},
+            { "text": "You mean my first one of the week? Nothing’s more effective for me than hoping in my car to drive a short distance to the cafe next to my home", "category": "transport", "points": 1},
             { "text": "Anywhere will do - I’ll just get myself an extra great treat tomorrow", "category": "fashion", "points": 1}
         ],
         "image": "images/q5.gif"
@@ -57,7 +57,7 @@ const questions = [
             { "text": "Organizing a late night study session with your friends, we’re struggling but at least not alone", "category": "commorg", "points": 1},
             { "text": "Textbook + past lecture material", "category": "scientist", "points": 1 }
         ],
-        "image": "q6_image.jpg"
+        "image": "images/q6.gif"
     },
     {
         "question": "You have had a busy evening with finishing homework and studying for a midterm. Now you are ready to take a break. What are you considering?",
@@ -67,7 +67,7 @@ const questions = [
             { "text": "A brief walk around the block to clear your mind. You need that fresh air.", "category": "fashion", "points": 1},
             { "text": "A quick power nap before getting back to work. You have this in the bag!", "category": "commorg", "points": 1}
         ],
-        "image": "q7_image.jpg"
+        "image": "images/q7.gif"
     },
     {
         "question": "You’re finally done with your midterm and as you walk past the college bookstore, something catches your eye– they're running their annual holiday sale! What are you buying to treat yourself after the midterm?",
@@ -78,7 +78,7 @@ const questions = [
             { "text": "A book you’ve been eyeing for a while. BookTok has you convinced it’s the best one yet!", "category": "scientist", "points": 1},
             { "text": "Game day merch! You can’t wait to cheer on the basketball team next week.", "category": "commorg", "points": 1}
         ],
-        "image": "q8_image.jpg"
+        "image": "images/q8.gif"
     },
     {
         "question": "You arrive home and are ready to relax after a tiring day. You decide to try to read a book. It’s a cloudy morning and you cannot see well. What will you do?",
@@ -88,7 +88,7 @@ const questions = [
             { "text": "Use a Kindle", "category": "tech", "points": 0.66},
             { "text": "Open all curtains/blinds", "category": "tech", "points": 0.33}
         ],
-        "image": "q9_image.jpg"
+        "image": "images/q9.gif"
     },
     {
         "question": "Amidst reading, you just remembered you need to create a social event to welcome new members of the club on campus you're in charge of. What are you considering?",
@@ -98,7 +98,7 @@ const questions = [
             { "text": "Organizing a volunteer event at a local food bank where everyone can give back to the community and meet new people", "category": "commorg", "points": 1},
             { "text": "Invite a guest speaker from the local zoo", "category": "scientist", "points": 1}
         ],
-        "image": "q10_image.jpg"
+        "image": "images/q10.gif"
     },
     {
         "question": "Now you and your friends are planning and getting ready for a weekend road trip. What is your first priority?",
@@ -108,7 +108,7 @@ const questions = [
             { "text": "Going to the mall to get the latest quarter-zip you've seen all over social media. It’ll be so cozy for the car.", "category": "fashion", "points": 1},
             { "text": "Researching the city you’re going to and its nearby hiking trails.", "category": "scientist", "points": 1}
         ],
-        "image": "q11_image.jpg"
+        "image": "images/q11.gif"
     },
     {
         "question": "You're in charge of ensuring the road trip goes smoothly. What's the first thing you would check?",
@@ -117,7 +117,7 @@ const questions = [
             { "text": "Ask if everyone packed their best outfits. We’re going to be taking pictures!", "category": "fashion", "points": 1},
             { "text": "Ensure that we get from place to place as fast as possible. We have so little time but so much to see!", "category": "transport", "points": 1}
         ],
-        "image": "q12_image.jpg"
+        "image": "images/q12.gif"
     }
 ];
 
@@ -249,8 +249,6 @@ function showFinalResult() {
     // Set the final text (use the randomCategory to customize the text)
     const finalText = document.getElementById("final-text");
 
-    // Customize the result text based on the category with the highest score
-    finalText.textContent = `Congratulations! Your strongest match is the ${randomCategory} category with a score of ${maxPercentage.toFixed(2)}%!`;
 }
 
 function calculateCharacterMatch() {

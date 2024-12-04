@@ -28,20 +28,29 @@ body {
 }
 
 /* Begin Quiz Button */
-.begin-quiz {
+/* Container for both buttons */
+.button-container {
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    gap: 20px; /* Space between buttons */
+    margin-top: 20px; /* Space above the buttons */
+    width: 100%; /* Ensures the container spans full width */
+}
+
+/* Begin Quiz Button */
+.begin-quiz, .see-all-results {
     font-family: Poppins, Arial, sans-serif;
     background-color: rgb(192, 192, 192);
     color: black;
     border: none;
     border-radius: 3px;
     padding: 15px 30px;
-    display: block;
-    margin: auto;
-    cursor: pointer;
     font-size: 1.1rem;
+    cursor: pointer;
 }
 
-.begin-quiz:hover {
+/* Hover effect for both buttons */
+.begin-quiz:hover, .see-all-results:hover {
     background-color: rgb(128, 128, 128);
     opacity: 0.8;
 }
@@ -149,7 +158,7 @@ progress::-webkit-progress-value {
     margin-top: 50px;
 }
 
-#final-text {
+#final-text-header {
     font-size: 1.5rem;
     font-weight: 500;
     color: #333;
@@ -161,6 +170,14 @@ progress::-webkit-progress-value {
     height: auto;
     margin-bottom: 20px;
 }
+
+#final-text-footer {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #333;
+    margin-top: 10px;
+}
+
 
 /* Responsive adjustments for mobile devices */
 @media (max-width: 600px) {
@@ -192,5 +209,16 @@ progress::-webkit-progress-value {
 
     #answer-list li {
         font-size: 1rem; /* Adjust font size for answers */
+    }
+
+   button-container {
+        flex-direction: column; /* Stack the buttons vertically on smaller screens */
+        gap: 10px; /* Reduce space between buttons */
+    }
+
+    .begin-quiz {
+        width: 100%; /* Make buttons full width on small screens */
+        padding: 12px 20px;
+        font-size: 1rem; /* Slightly smaller button text */
     }
 }

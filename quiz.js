@@ -247,7 +247,8 @@ function showFinalResult() {
     finalImage.src = categoryImages[randomCategory] || "default_image.jpg";  // Use a default if no match found
 
     // Set the final text (use the randomCategory to customize the text)
-    const finalText = document.getElementById("final-text");
+    const finalTextHeader = document.getElementById("final-text-header");
+    const finalTextFooter = document.getElementById("final-text-footer");
 
 }
 
@@ -271,5 +272,3 @@ function calculateCharacterMatch() {
     // Return both the max percentage and the list of categories with that max
     return { maxPercentage, categoriesWithMaxPercentage };
 }
-
-

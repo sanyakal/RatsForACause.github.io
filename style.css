@@ -149,17 +149,17 @@ progress::-webkit-progress-value {
     margin-top: 50px;
 }
 
-.final-image {
-    max-width: 70%;
-    height: auto;
-    margin-bottom: 20px;
-}
-
 #final-text {
     font-size: 1.5rem;
     font-weight: 500;
     color: #333;
     margin-top: 10px;
+}
+
+.final-image {
+    max-width: 40%;
+    height: auto;
+    margin-bottom: 20px;
 }
 
 /* Responsive adjustments for mobile devices */

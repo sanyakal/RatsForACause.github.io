@@ -271,3 +271,5 @@ function calculateCharacterMatch() {
     // Return both the max percentage and the list of categories with that max
     return { maxPercentage, categoriesWithMaxPercentage };
 }
+
+
